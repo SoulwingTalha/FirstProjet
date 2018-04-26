@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title>First Projet</title>
+<link rel=stylesheet href=style.css>
+<body>
+
+	<h1>Demander l'heure</h1>
+	<button onclick="affiche_heure()">Afficher</button>
+	<p id=response></p>
+
+	<script>
+		function affiche_heure()
+		{
+			document.getElementById('response').innerHTML = Date();
+		}
+	</script>
+</body>
+</html>
