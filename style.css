@@ -2,3 +2,28 @@ body
 {
 	background-color: tan;
 }
+.titre
+{
+	font-size: 3rem;
+	background-color: snow;
+	color: navy;
+	width: 400px;
+	text-align: center;
+	border-bottom: thick double navy;
+}
+.button
+{
+	background-color: snow;
+	color: navy;
+	border:medium double navy;
+	width: 10rem;
+	height: 3rem;
+}
+.affichage
+{
+	font-size: 2rem;
+	background-color: snow;
+	color:navy;
+	width: auto;
+	text-align: center;
+}
