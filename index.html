@@ -4,14 +4,30 @@
 <link rel=stylesheet href=style.css>
 <body>
 
-	<h1 class=titre>Demander l'heure</h1>
+	<h1 class=titre>Demander date et heure</h1>
 	<button class=button onclick="affiche_heure()">Afficher</button>
 	<p id=response class=affichage></p>
 
 	<script>
+		var Jours = ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+		var Mois = ["Janvier","Fevrier","Mars","Avril","Mai","Juin","Juillet","Aout","Septembre","Octobre","Novembre","Decembre"];
+
 		function affiche_heure()
 		{
-			document.getElementById('response').innerHTML = Date();
+			var d = new Date();
+			var x = 
+			Jours[d.getDay()]
+			+ " "
+			+ d.getDate()
+			+ " "
+			+ Mois[d.getMonth()]
+			+ " "
+			+ d.getFullYear()
+			+ "---"
+			+ d.getHours()
+			+ "h"
+			+ d.getMinutes();
+			document.getElementById('response').innerHTML = x;
 		}
 	</script>
 </body>
